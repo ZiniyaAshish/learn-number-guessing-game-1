@@ -118,3 +118,9 @@ git rebase -i HEAD~9
 git rebase -i HEAD~7
 git rebase -i HEAD~6
 git status
+pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
+git add .
+git commit -m "Finished adding number_guess.sql"
+git status
+git remote add origin https://github.com/ZiniyaAshish/learn-number-guessing-game.git
+git push -u origin main
